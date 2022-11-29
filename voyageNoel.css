@@ -1,26 +1,26 @@
 /*  Elements principaux de la page  */
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body
-{
-    background-color:  #00c3fffa   ;
+
+body {
+    background-color: #00c3fffa;
     font-family: Arial, Helvetica, sans-serif;
     color: #181818;
 
 }
 
-#bloc_page
-{
+#bloc_page {
     max-width: 900px;
     margin: auto;
     display: flex;
     flex-direction: column;
 }
 
-section h1, footer h1, nav a
-{
+section h1,
+footer h1,
+nav a {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: normal;
     text-transform: uppercase;
@@ -28,9 +28,8 @@ section h1, footer h1, nav a
 
 /*  header */
 
-header
-{
-    
+header {
+
     background-color: rgb(238, 232, 170);
     display: flex;
     flex-direction: column;
@@ -38,30 +37,27 @@ header
 
 }
 
-#titre_principal
-{
+#titre_principal {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
-#logo img
-{
+#logo img {
     width: 100px;
     height: 100px;
     box-shadow: 0px 2px 2px #1c1a19;
     border-radius: 1rem;
 }
 
-header h1
-{ font-family: Georgia, 'Times New Roman', Times, serif, serif;
+header h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif, serif;
     font-size: 2.5em;
     font-weight: normal;
-    
+
 }
 
-header h2
-{
+header h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 5em;
     text-align: center;
@@ -70,36 +66,31 @@ header h2
 
 /* Navigation */
 
-nav ul
-{
+nav ul {
     list-style-type: none;
     display: block;
 }
 
-nav li
-{
+nav li {
     margin-right: 10px;
     display: flex;
 }
 
-nav a
-{
+nav a {
     font-size: 1.3em;
     color: #181818;
     padding-bottom: 3px;
     text-decoration: none;
 }
 
-nav a:hover
-{
+nav a:hover {
     color: #760001;
     border-bottom: 1px solid #760001;
 }
 
 /* Bannière */
 
-#banniere_image
-{
+#banniere_image {
     margin-top: 15px;
     border-radius: 5px;
     box-shadow: 0px 2px 2px #1c1a19;
@@ -108,19 +99,19 @@ nav a:hover
     background-position: center;
     background: url(./martiniquePonton.jpg) no-repeat;
     background-origin: border-box;
-    width: 100%;max-width: 900px;
+    width: 100%;
+    max-width: 900px;
     margin: auto;
     display: flex;
     flex-direction: column;
-   
-    
+
+
 
 
 
 }
 
-#banniere_description
-{
+#banniere_description {
     position: absolute;
     bottom: 0;
     border-radius: 0px 0px 5px 5px;
@@ -128,34 +119,30 @@ nav a:hover
     height: 33px;
     padding-top: 15px;
     padding-left: 4px;
-    background-color: rgba(24,24,24,0.8);
+    background-color: rgba(24, 24, 24, 0.8);
     color: white;
     font-size: 0.8em;
-    
+
 }
 
 /* Corps */
 
-section
-{
+section {
     display: flex;
     margin-bottom: 20px;
 }
 
-article
-{
+article {
     text-align: justify;
 }
 
-article
-{
+article {
     margin-right: 20px;
     flex: 3;
-   
+
 }
 
-.ico_categorie
-{
+.ico_categorie {
     border-radius: 1rem;
     height: auto;
     width: 100%;
@@ -163,11 +150,10 @@ article
     object-fit: cover;
     box-shadow: 0px 2px 2px #1c1a19;
 
-   
+
 }
 
-article p
-{
+article p {
     font-size: 1em;
 }
 
@@ -175,35 +161,31 @@ article p
 
 /* Footer */
 
-footer
-{
+footer {
     display: flex;
     flex-direction: column;
-    
+
 
 }
 
-footer p, footer ul
-{
+footer p,
+footer ul {
     font-size: 0.8em;
 }
 
-footer h1
-{
+footer h1 {
     font-size: 1.2em;
 }
 
-#Photos
-{
+#Photos {
     max-width: 900px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    
+
 }
 
-#Photos img
-{
+#Photos img {
     border-radius: 1rem;
     height: 15rem;
     width: 100%;
@@ -213,17 +195,18 @@ footer h1
 
 }
 
-#Photos1
-{
+
+
+
+#Photos1 {
     max-width: 900px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    
+
 }
 
-#Photos1 img
-{
+#Photos1 img {
     border-radius: 1rem;
     height: 15rem;
     width: 100%;
@@ -231,4 +214,22 @@ footer h1
     object-fit: cover;
     box-shadow: 0px 2px 2px #1c1a19;
 
+}
+
+@media screen and (max-width: 900px) {
+    #Photos {
+        max-width: 900px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+
+    }
+
+    #Photos1 {
+        max-width: 900px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+
+    }
 }
